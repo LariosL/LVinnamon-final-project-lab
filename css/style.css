@@ -70,3 +70,13 @@
 #dropdown:hover #dropdown-item{
     display: block;
 }
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: black;
+    color: lightgray;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
