@@ -13,6 +13,19 @@ body {
     background-color: #f4f4f4;
 }
 
+.content-container{
+        
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 
 /* navbar */
 
@@ -35,7 +48,7 @@ body {
 .navitem {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
