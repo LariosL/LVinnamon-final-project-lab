@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
+
 
 /* navbar */
 
@@ -75,36 +77,43 @@
     display: block;
 }
 
-/* isi */
-#isi {
+
+
+body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #eae7e4;
-}
+    background-color: #f4f4f4;
+  }
 
-#bckimg {
-    width: 1;
-    background-image:linear-gradient(rgba(36, 35, 34, 0.5), rgba(67, 56, 34, 0.5)),url('../assets/aboutusbg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #f9eddf;
-}
+  h1 {
+    text-align: center;
+  }
 
-#isibg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-block: 4rem;
-    margin-inline: 24rem;
-}
+  .store-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
 
-#isibg h1 {
-    margin-block: 10px;
-}
+  .store-card__name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .store-card__address {
+    margin-bottom: 5px;
+  }
+
+  .store-card__hours {
+    font-weight: bold;
+  }
 
   /* FOOTER */
-  footer {
+footer {
     width: 100%;
     bottom: 0;
     background-color: black;
@@ -115,39 +124,25 @@
     margin-top: auto;
 }
 
-/* image slider */
-#slide-body {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-}
 
-#slide-container {
-    display: flex;
-    align-items: center;
-}
+  @media screen and (max-width: 800px) {
+    #nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:#FAF0E4;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
 
-#content-container {
-    overflow: hidden;
-    width: 700px;
-}
+    #nav-container a {
+        text-decoration: none;
+        color: black;
+        margin: 8px 0px;
+    }
 
-#slider-content {
-    display: flex;
-    position: relative; 
-}
-
-.slider-img {
-    height: 500px;
-    width: 700px;
-}
-
-.left {
-    cursor: pointer;
-}
-
-.right {
-    cursor: pointer;
-}
-
+    #logo {
+        width: 20%;
+    }
