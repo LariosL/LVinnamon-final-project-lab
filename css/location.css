@@ -28,7 +28,6 @@ iframe {
 
 
 /* navbar */
-
 #logo {
     width: 150px;
     margin-inline: 10px;
@@ -38,7 +37,7 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:white;
+    background-color:#FAF0E4;
     overflow: hidden;
     text-align: center;
     align-items: center;
@@ -51,12 +50,19 @@ iframe {
     font-size: 20px;
 }
 
+.navitem:hover{
+    color: #fdd043;
+    transition: 700ms;
+}
+
+
 
 #dropbtn {
     border: none;
     background-color: inherit;
     font-size: 16px;
     padding: 12px 18px;
+    transition: 700ms;
 }
 
 #dropdown-item {
@@ -64,6 +70,7 @@ iframe {
     position: absolute;
     display: none;
     z-index: 1;   
+    transition: 700ms;
 }
 
 #dropdown-item a {
@@ -71,6 +78,7 @@ iframe {
     padding: 12px 18px;
     text-decoration: none;
     display: block;
+    transition: 700ms;
 
 }
 
@@ -84,19 +92,23 @@ iframe {
     font-size: 15px;
     margin-inline: 7px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 700ms;
 }
 
 #registerbtn:hover {
     background-color:#ffdc73;
+    transition: 700ms;
 
 }
 
 #dropdown-item a:hover {
     background-color: blanchedalmond;
+    transition: 700ms;
 }
 
 #dropdown:hover #dropdown-item{
     display: block;
+    transition: 700ms;  
 }
 
 h1 {
