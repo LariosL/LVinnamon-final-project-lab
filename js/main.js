@@ -1,10 +1,10 @@
 $(function() {
     let $content = $('#slider-content')
-    const width = 271.5
+    const WIDTH = 271.5
 
     $('.left').click(() => {
         $content.animate({
-            left: +width,
+            left: +WIDTH,
         }, 'slow', () => {
             $('#slider-content :last-child').prependTo($content)
             $content.css('left', '0')
@@ -13,7 +13,7 @@ $(function() {
 
     $('.right').click(() => {
         $content.animate({
-            left: -width,
+            left: -WIDTH,
         }, 'slow', () => {
             $('#slider-content :first-child').appendTo($content)
             $content.css('left', '0')

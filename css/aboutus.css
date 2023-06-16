@@ -131,13 +131,14 @@
 }
 
 #content-container {
-    overflow:hidden ;
+    overflow: hidden;
     width: 800px;
 }
 
 #slider-content {
     display: flex;
     position: relative; 
+    margin-left: -800px;
 }
 
 .slider-img {

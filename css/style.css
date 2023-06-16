@@ -142,19 +142,17 @@ footer {
 
 #content-container {
     overflow: hidden;
-    display: flex;
-    width: 19vw;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    width: 271.5px;
 }
 
 #slider-content {
     display: flex;
-    position: relative;
-    margin-left: -271.5px; 
+    position: relative; 
+    margin-left: -271.5px;
 }
 
 .slider-img {
-    width: 19vw;
+    width: 271.5px;
 }
 
 .left {
