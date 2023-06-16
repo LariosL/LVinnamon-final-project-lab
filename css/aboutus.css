@@ -8,7 +8,7 @@
 /* navbar */
 
 #logo {
-    width: 200px;
+    width: 150px;
     margin-inline: 10px;
 }
 
@@ -60,6 +60,8 @@
     font-weight:600;
     border-radius: 25px;
     font-size: 15px;
+    margin-inline: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #registerbtn:hover {
@@ -129,8 +131,8 @@
 }
 
 #content-container {
-    overflow: hidden;
-    width: 700px;
+    overflow:hidden ;
+    width: 800px;
 }
 
 #slider-content {
@@ -139,8 +141,7 @@
 }
 
 .slider-img {
-    height: 500px;
-    width: 700px;
+    width: 800px;
 }
 
 .left {
@@ -151,3 +152,60 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+    #isibg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 4rem;
+        margin-inline: 5rem;
+    }
+
+    #slide-body {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    
+    #slide-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    #content-container {
+        overflow: hidden;
+        width: 600px;
+    }
+    
+    #slider-content {
+        display: flex;
+        position: relative; 
+    }
+    
+    .slider-img {
+        width: 600px;
+    }
+
+
+    #nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:#FAF0E4;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #nav-container a {
+        text-decoration: none;
+        color: black;
+        margin: 8px 0px;
+    }
+
+    #logo {
+        width: 20%;
+    }  
+}

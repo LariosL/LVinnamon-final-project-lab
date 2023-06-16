@@ -2,12 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-   /* NAVBAR */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.bold{
+    font-weight: bold;
+}
+.yellow{
+    color: #fdd043;
+}
+
+/* NAVBAR */
+
 #logo {
-    width: 5%;
+    width: 150px;
     margin-inline: 10px;
 }
 
@@ -15,15 +30,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:#FAF0E4;
+    background-color:white;
     overflow: hidden;
     text-align: center;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .navitem {
     text-decoration: none;
     color: black;
+    font-size: 25px;
 }
 
 
@@ -50,15 +67,19 @@
 }
 
 #registerbtn{
-    background-color:#FF8551;
+    background-color:#fdd043;
     border: none;  
-    color: white;
-    padding: 16px 15px;
+    color: #796567;
+    padding: 10px 25px;
     font-weight:600;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-inline: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #registerbtn:hover {
-    background-color:darkcyan;
+    background-color:#ffdc73;
 
 }
 
@@ -69,7 +90,6 @@
 #dropdown:hover #dropdown-item{
     display: block;
 }
-
 
 /* isi */
 #isi {
@@ -86,6 +106,7 @@
     background-position: center;
     background-size: cover;
     color: #f9eddf;
+    padding-bottom: 5px;
 }
 
 #isibg {
@@ -126,8 +147,8 @@ input[type=text], input[type=password], select {
 
 #submitbtn {
     width: 100%;
-    background-color: #FF8551;
-    color: white;
+    background-color: #fdd043;
+    color: #796567;
     font-weight: bold;
     border: none;
     padding: 10px;
@@ -136,7 +157,7 @@ input[type=text], input[type=password], select {
 }
 
 #submitbtn:hover {
-    background-color:darkcyan;
+    background-color:#ffdc73;
 
 }
 
@@ -157,4 +178,50 @@ footer {
     padding: 1rem;
     text-align: center;
     font-weight: bold;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 800px) {
+    #form-regis {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    #nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:#FAF0E4;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #nav-container a {
+        text-decoration: none;
+        color: black;
+        margin: 8px 0px;
+    }
+
+    #logo {
+        width: 20%;
+    }
+
+    #content-container {
+        overflow: hidden;
+        width: 24vw;
+    }
+
+    #bckimg {
+        width: 1;
+        background-image:linear-gradient(rgba(36, 35, 34, 0.5), rgba(67, 56, 34, 0.5)),url('../assets/regbg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #f9eddf;
+        padding-bottom: 10vh;
+    }
 }

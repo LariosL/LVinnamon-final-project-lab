@@ -7,8 +7,12 @@
 }
 
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #f4f4f4;
 }
+
 .bold{
     font-weight: bold;
 }
@@ -18,71 +22,73 @@ body{
 /* navbar */
 
 #logo {
-    width: 200px;
-    margin-inline: 100px;
+  width: 150px;
+  margin-inline: 10px;
 }
 
 #nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color:white;
-    overflow: hidden;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:white;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navitem {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
 }
 
 
 #dropbtn {
-    border: none;
-    background-color: inherit;
-    font-size: 16px;
-    padding: 12px 18px;
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  padding: 12px 18px;
 }
 
 #dropdown-item {
-    background-color:#f9eddf;
-    position: absolute;
-    display: none;
-    z-index: 1;   
+  background-color:#f9eddf;
+  position: absolute;
+  display: none;
+  z-index: 1;   
 }
 
 #dropdown-item a {
-    color: black;
-    padding: 12px 18px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
 
 }
 
 #registerbtn{
-    background-color:#fdd043;
-    border: none;  
-    color: #796567;
-    padding: 10px 25px;
-    font-weight:600;
-    border-radius: 25px;
-    font-size: 15px;
+  background-color:#fdd043;
+  border: none;  
+  color: #796567;
+  padding: 10px 25px;
+  font-weight:600;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-inline: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #registerbtn:hover {
-    background-color:#ffdc73;
+  background-color:#ffdc73;
 
 }
 
 #dropdown-item a:hover {
-    background-color: blanchedalmond;
+  background-color: blanchedalmond;
 }
 
 #dropdown:hover #dropdown-item{
-    display: block;
+  display: block;
 }
 
 /* FOOTER */
@@ -94,6 +100,7 @@ footer {
     padding: 1rem;
     text-align: center;
     font-weight: bold;
+    margin-top: auto;
 }
 
 

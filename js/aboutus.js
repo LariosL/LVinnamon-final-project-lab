@@ -1,6 +1,6 @@
 $(function() {
     let $content = $('#slider-content')
-    const WIDTH = 700
+    const WIDTH = 800
 
     $('.left').click(() => {
         $content.animate({
