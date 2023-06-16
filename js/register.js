@@ -42,7 +42,7 @@ function Submit(){
 
     if(region.selectedIndex == 0) {
         error = true
-        alert("pick region")
+        alert("Pick your region!")
         return
    }
    
@@ -50,6 +50,14 @@ function Submit(){
 
     if(!ValidatePassword(psw.value)) {
         error = true
+        return
+    }
+
+    let cfpw = document.getElementById("cfpw")
+
+    if(psw.value !== cfpw.value){
+        error = true
+        alert("Password do not match!")
         return
     }
 
