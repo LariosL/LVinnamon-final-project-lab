@@ -157,6 +157,28 @@ input[type=text], input[type=password], select {
     border: 1px solid black;
 }
 
+input[type=text]:focus, input[type=password]:focus, select:focus {
+    width: 100%;
+    padding: 8px 15px;
+    margin-block: 5px;
+    outline-width: 2px;
+    border: none;
+    outline-style:double;
+    outline-color: #fdd043;
+}
+
+input[type=radio]:focus {
+    outline-width: 1px;
+    outline-style:double;
+    outline-color: #fdd043;
+}
+
+input[type=checkbox]:focus {
+    outline-width: 1px;
+    outline-style:double;
+    outline-color: #fdd043;
+}
+
 #submitbtn {
     width: 100%;
     background-color: #fdd043;

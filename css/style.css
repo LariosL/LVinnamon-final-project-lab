@@ -177,10 +177,12 @@ footer {
 
 .left {
     cursor: pointer;
+    font-size: 25px;
 }
 
 .right {
     cursor: pointer;
+    font-size: 25px;
 }
 
 hr {
@@ -265,13 +267,52 @@ hr {
         width: 20%;
     }
 
+    #slide-body {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin-block: 3rem;
+        margin-right: 4rem;
+    }
+    
+    #slide-container {
+        display: flex;
+        align-items: center;
+        transition: 700ms;
+    }
+    
+    #slide-container:hover {
+        scale: 1.05;
+        transition: 700ms;
+    }
+    
     #content-container {
         overflow: hidden;
-        width: 24vw;
+        width: 250px;
+    }
+    
+    #slider-content {
+        display: flex;
+        position: relative; 
+        margin-left: -250px;
+    }
+    
+    .slider-img {
+        width: 250px;
+        
+    }
+    
+    .left {
+        cursor: pointer;
+    }
+    
+    .right {
+        cursor: pointer;
     }
 
-    .slider-img {
-        width: 24vw;
+    #kiri {
+        width: 70%;
+        margin: 0px 2rem;
     }
 
 }

@@ -1,6 +1,18 @@
 $(function() {
     let $content = $('#slider-content')
-    const WIDTH = 271.5
+    let WIDTH = 271.5
+
+    function handleResize() {
+        const windowWidth = $(window).width();
+        if(windowWidth <= 800) {
+            WIDTH = 250
+        }else if(windowWidth > 800){
+            WIDTH = 271.5
+        }
+        }
+    
+        handleResize();
+        $(window).resize(handleResize);
 
     $('.left').click(() => {
         $content.animate({

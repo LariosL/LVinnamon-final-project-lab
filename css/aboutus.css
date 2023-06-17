@@ -159,10 +159,12 @@
 
 .left {
     cursor: pointer;
+    font-size: 25px;
 }
 
 .right {
     cursor: pointer;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 800px) {
@@ -194,6 +196,8 @@
     #slider-content {
         display: flex;
         position: relative; 
+        margin-left: -600px;
+
     }
     
     .slider-img {
